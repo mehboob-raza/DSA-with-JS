@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Traversing</title>
+</head>
+<body>
+    <input type="number" id="input" />
+    <button onclick="getElement()">Get Element</button>
+    <script>
+        let data = [99, 3,45, 67,8, 34, 2, 5, 6, 22, 12]
+        function getElement(){
+            let element = document.getElementById('input').value
+            if(element < data.length){
+                alert(data[element])
+            }
+            else if(element > data.length){
+                alert('please enter valid input')
+            }
+            else{
+                alert('enter a valid value')
+            }
+        }
+    </script>
+</body>
+</html>
